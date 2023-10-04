@@ -1,0 +1,202 @@
+.pp{background-color: blue;
+padding: 20px 30px;
+margin: auto;
+width: 70%;
+/*border-style:  solid dotted;
+border-width: 3px;
+border-color: red;*/
+border: red dotted 3px;
+outline: 5px blueviolet solid;
+
+   }
+#df{background-color: red;}
+
+.mado{width: 800px;height: 900px;
+     /*background-image:url("Screenshot_2020-06-05-02-09-57-63.png") ;
+     background-attachment: scroll;
+     background-color: #00f;
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-position: 10% 20%;
+    */
+    background: #00f url("Screenshot_2020-06-05-02-09-57-63.png") no-repeat scroll 10% 20%;
+}
+span{
+   background-color: #00F;
+   margin: 20px;
+   padding: 10px;
+
+}
+.one,.two,.three,.four{
+   background-color: #EEE;
+   margin: 20px;
+   padding: 10px;
+   width:fit-content
+}
+.one{
+   color: red;
+   border-bottom: red solid 2px;
+}
+.three{
+   color: green;
+   border-bottom: green solid 2px;
+}
+.two{
+   color: blue;
+   border-bottom: blue solid 2px;
+}
+.four{
+   color: black;
+   border-bottom: black solid 2px;
+
+}
+.mado p{
+   color: aqua;
+}
+
+.generl {text-align: center;
+      padding: 10px;
+      background-color: #eee;
+      font-size: 20px;
+      border: 2px solid red;
+}
+.generl p{border:inherit; 
+   cursor: pointer;
+   font-size: 38px;
+   font-weight: bold;
+   font-style: italic;
+   opacity: 0.9;
+}
+
+.over{background-color: rgb(165, 151, 132);
+   width: fit-content;
+   margin: 20px auto;
+   border-radius: 6px;
+   height: 200px;
+   overflow: auto;
+   text-shadow: 1px 2px 4px red;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.arp{
+   text-align: center;
+   padding: 10px;
+   background-color: #eee;
+   font-size: 20px;
+   direction: rtl;
+   text-decoration: underline;
+   text-transform: capitalize;
+
+}
+
+.float{
+   background-color: rgb(227, 210, 210);
+   padding: 10px;
+   width: 300px;
+}
+.float .one1{
+   
+text-align: center;
+background-color: aqua;
+position: relative;
+top: 30px;
+
+}
+.float .tow2{
+   text-align: center;
+background-color: red;
+}
+.hhh{
+   background-color: bisque;
+   width:600px;
+}
+
+.flex{
+   background-color: #eee;
+   margin: 20px auto;
+   padding: 10px;
+   width: 400px;
+   display: flex;
+   /*flex-direction: row;
+   flex-wrap: wrap;*/
+   flex-flow: row wrap;
+   justify-content: center;
+align-items: center;
+height: 500px;
+}
+.flex div{
+   background-color: #00F;
+   margin: 20px;
+   padding: 20px;
+   color: #EEE;
+     
+}
+
+.onef{flex-grow: 2;
+order: 3;}
+
+
+img:hover{
+   filter: grayscale(50%);
+}
+p+a{
+   pointer-events: none;
+}
+.grid{
+   background-color: #eee;
+   margin: 20px auto;
+   padding: 10px;
+   width: 400px;
+   display: grid;
+   grid-template-columns: repeat(4,auto);
+   grid-template-rows: repeat(3,1fr);
+   gap: 10px 15px;
+   justify-content: flex-start;
+   align-content: space-between;
+ }
+.grid div{
+   background-color: red;
+   color: aliceblue;
+   padding: 20px; 
+}
+.page{
+   height: 500px;
+   background-color: #eee;
+   display: grid;
+   grid-template-columns: repeat(10,1fr);
+   grid-template-rows: 50px auto 50px;
+   grid-template-areas:
+   "log log log nav nav nav nav nav nav nav"
+   "content content content content content content content content side side"
+   "foot foot foot foot foot foot foot foot foot foot"
+   
+   ;
+ }
+
+ul{list-style: none;}
+ul li{display: inline-block;
+   margin: 5px 20px;
+
+}
+h3{
+   grid-area: log;
+background-color: red;
+color: white;
+margin: inherit;
+}
+nav{
+   grid-area: nav;
+   background-color: blue;
+   color: white; 
+}
+section{
+   grid-area: content;
+   background-color: rgb(195, 0, 255);
+   color: white;
+}
+aside{grid-area: side;
+   background-color: rgb(94, 128, 0);
+   color: white;}
+footer{grid-area: foot;
+   background-color: black;
+   color: white;}
